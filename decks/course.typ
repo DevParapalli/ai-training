@@ -6,8 +6,8 @@
 // below is made up for this course. The TCS and Cisco entries at the bottom are
 // the only real ones; swap them per audience.
 
-#let track = "AI Builder Track"
-#let footer-line = [© Devansh Parapalli · hey\@parapalli.dev]
+#let track = "Building the Right AI System"
+#let footer-line = [© 2026 Devansh Parapalli]
 #let total-classes = 15
 
 // Us. The whole track is told from inside LOL, looking at the whole company:
@@ -51,29 +51,29 @@
 // Companies we deal with. All fictional.
 #let bum = (
   name: [Bayerische Unfug Maschinen],
-  short: [BUM],
+  short: [B.U.M.],
   role: [Customer. A German machinery maker that ships its machines to the world through us.],
   money: [Pays in EUR from Munich, usually a little short after bank charges.],
 )
 #let ass = (
   name: [Armadillo Security Services],
-  short: [ASS],
+  short: [A.S.S.],
   role: [Supplier. Physical security and background checks for our warehouses and drivers.],
   money: [Invoices through InvoiceHub, one per check or per guard shift.],
 )
 #let dih = (
   name: [Drymark Institutional Handling],
-  short: [DIH],
+  short: [D.I.H.],
   role: [Supplier. Admin, facilities and janitorial across our offices.],
 )
 #let gag = (
   name: [Gastro Alliance Group],
-  short: [GAG],
+  short: [G.A.G.],
   role: [Supplier. Catering. Owns the coffee machines, which people still raise IT tickets about.],
 )
 #let sc = (
   name: [Stratocumulus Cloud],
-  short: [SC],
+  short: [S.C.],
   role: [Supplier. Our cloud provider. The bill needs cost centres it never has; credits arrive late.],
 )
 

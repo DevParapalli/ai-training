@@ -46,11 +46,11 @@
 
 #section-slide(number: [2], title: [The capstone], subtitle: [Place a problem nobody's seen, and argue for the cheapest thing that works.])
 
-#steps-slide(title: [Each team gets one problem and #capstone.minutes.build minutes],
+#steps-slide(title: [Each team gets one problem, or brings its own, and #capstone.minutes.build minutes],
   [Write it as one sentence],
   [Answer the six questions from class 2],
   [Place it on the card],
-  [Fill in the one-page proposal],
+  [Fill in the blank proposal],
   [Present in #capstone.minutes.present minutes])
 
 #explain(title: [The one-page proposal has six boxes, and "no AI needed" fits in all of them],

@@ -39,7 +39,7 @@ The cheapest option that stays inside the error budget wins. "No AI needed" is a
 
 ## Before class 1
 
-Five days of Python self-study, two topics a day, from the pre-reading list in `docs/`. If you write Python for a living, skip it and just run the environment check.
+Five days of Python self-study, two topics a day, in `docs/prereading.typ`, which also has a short reading before each class. If you write Python for a living, skip it and just run the environment check.
 
 ## Part A: choosing the right tool
 
@@ -139,7 +139,7 @@ Code: deploy with `docker compose`, add tracing and a cost log.
 
 How much to let it do on its own: assist, co-pilot, supervised agent, autonomous. Where support work sits on that scale today, and what changes in the job and what doesn't.
 
-Capstone: teams draw a problem nobody has seen, place it on the card, and write a one-page proposal for the cheapest thing that works: where it lands, the steps, the error budget, the cost. Three minutes each to present. "No AI needed" can win. The proposal is a one-page Centauri brief (docs/proposal.typ).
+Capstone: teams draw a problem nobody has seen, place it on the card, and write a one-page proposal for the cheapest thing that works: where it lands, the steps, the error budget, the cost. Three minutes each to present. "No AI needed" can win. Teams get a worked example and a blank one-page proposal as PDFs, and may bring their own problem instead of drawing one.
 
 ## Open
 

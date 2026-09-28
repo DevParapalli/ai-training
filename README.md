@@ -2,7 +2,7 @@
 
 Fifteen one-hour classes on how to tell which problems need AI, which need a model, which need a script, and which need nothing at all, and then how to build the ones that do.
 
-Copyright © 2026 Devansh Parapalli (hey@parapalli.dev). Released under the MIT licence (see `LICENSE`).
+Copyright © 2026 Devansh Parapalli (hey@parapalli.dev). Released under the MIT licence (see `LICENSE`). No sensitivity label is applied yet.
 
 ## Who it is for
 
@@ -25,7 +25,9 @@ syllabus.md          the fifteen classes, what each covers and why
 data/generate.py     builds the generated ticket and host-signal data (seeded, stdlib only)
 data/tickets_handwritten.csv  300 tickets written by hand across the company, the way people actually raise them
 data/runbooks/       eight LOL runbooks used for retrieval, tools and agents (classes 9 to 12)
-docs/proposal.typ    one-page capstone proposal, a Centauri brief
+docs/prereading.typ  pre-week Python self-study and the pre-reading for classes 2 to 15
+docs/proposal.typ    capstone proposal, worked example (not a draw problem)
+docs/proposal-blank.typ  capstone proposal, blank one-page worksheet
 decks/course.typ     course-wide facts: company, systems, the running ticket
 decks/theme.typ      course theme on top of Centauri
 decks/classNN.typ    one deck per class; per-class facts in a #let block at the top

@@ -14,7 +14,7 @@
   D: (name: [Running AI responsibly], accent: "lime"),
 )
 
-#let part-of(n) = if n <= 5 { "A" } else if n <= 8 { "B" } else if n <= 12 { "C" } else { "D" }
+#let part-of(n) = if n <= 4 { "A" } else if n <= 8 { "B" } else if n <= 12 { "C" } else { "D" }
 
 /// Deck setup for class `n`.
 #let class(n: 1, body) = {
