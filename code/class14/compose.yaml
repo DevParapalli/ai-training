@@ -1,0 +1,15 @@
+# Class 14: the triage service with tracing, run with `docker compose up`.
+services:
+  triage:
+    build: .
+    environment:
+      LLM_API_KEY: ${LLM_API_KEY}
+      LLM_BASE_URL: ${LLM_BASE_URL}
+      LLM_MODEL: ${LLM_MODEL}
+      PROMPT_VERSION: "triage-v3"
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://jaeger:4318
+    ports: ["8080:8080"]
+    depends_on: [jaeger]
+  jaeger:
+    image: jaegertracing/all-in-one:1.60
+    ports: ["16686:16686"]   # trace viewer

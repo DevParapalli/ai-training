@@ -1,0 +1,301 @@
+ticket_id,opened_at,requester,department,requester_type,channel,priority,short_description,description,queue
+TKT-418001,2026-06-01T03:41:00Z,Priya Nair,Finance,employee,email,P3,"invoices","hi team, the invoices from armadillo are not there again. can someone look. thanks priya",invoice-import
+TKT-418002,2026-06-01T04:05:00Z,Jan de Vries,Warehouse,employee,phone,P2,"Scanners down Rotterdam","Caller says none of the handheld scanners on the Rotterdam night shift will sync. Pickers have switched to paper lists. About 30 people affected.",warehouse-devices
+TKT-418003,2026-06-01T05:12:00Z,Tom Becker,Finance,employee,portal,P3,"Need access","Need access to ledgerline pls. My manager is Julia.",access-request
+TKT-418004,2026-06-01T06:30:00Z,Rachel Stein,Sales,employee,email,P3,"BUM shipment to Santos","Hi, Bayerische Unfug's shipment to Brazil is showing 'held' in Tracklane since Thursday. Their logistics lead is asking me every hour. Can someone from ops tell me what's missing? Rachel",shipment-ops
+TKT-418005,2026-06-01T07:58:00Z,Marisol Ortega,Customer Service,employee,chat,P4,"password","forgot password again sorry",password-reset
+TKT-418006,2026-06-01T08:40:00Z,Greta Lund,Sales,employee,portal,P4,"Wifi Oslo","wifi in the oslo office is super slow today, teams calls keep freezing",network-vpn
+TKT-418007,2026-06-01T09:30:00Z,cw.arjun.menon,Finance,contingent,email,P3,"laptop not working with LOL","Hello, I joined the LOL finance team through my company yesterday. My company laptop does not open Ledgerline, it says device not compliant. I tried installing Company Portal like the employee guide says but it says my account is not allowed. Please advise. Regards Arjun",device-enrolment
+TKT-418008,2026-06-01T10:15:00Z,Darnell Brooks,Warehouse,employee,phone,P2,"Label printer dock 7","Caller from Memphis says the label printer on dock 7 prints blank labels. Two trucks waiting.",warehouse-devices
+TKT-418009,2026-06-01T11:04:00Z,Kenji Watanabe,Operations,employee,portal,P2,"URGENT - export failing","TRIAL BALANCE EXPORT FAILS AT THE END. APAC CLOSE PACK DUE TODAY 5PM SGT. PLEASE HELP ASAP!!!",report-export
+TKT-418010,2026-06-01T12:22:00Z,Fatima Al-Sayed,HR,employee,portal,P3,"New joiners next week","We have 6 warehouse joiners starting at Felixstowe on the 8th. They need badges and background checks done. List attached.",security-access
+TKT-418011,2026-06-01T13:17:00Z,Chidi Okeke,Finance,employee,email,P3,"FW: RE: RE: DIH invoice May","see below, can you check if this came in? ---- From: billing (Drymark) Sent: Friday. Hi Chidi, we resent the May facilities invoice on Wed, please confirm receipt. ----",invoice-import
+TKT-418012,2026-06-01T14:50:00Z,Emma Lindqvist,Finance,employee,portal,P3,"Role in Procura","I moved from AP to buying last month and still can't create POs in Procura. Can you give me the buyer role. Thanks",access-request
+TKT-418013,2026-06-01T15:33:00Z,Yusuf Demir,Sales,employee,chat,P4,"outlook","outlook keeps asking for my password every 5 min",email-collab
+TKT-418014,2026-06-01T16:22:00Z,Rohan Kulkarni,Finance,employee,chat,P4,"quick q","is invoice hub down?",invoice-import
+TKT-418015,2026-06-02T02:15:00Z,Mei Lin Tan,Warehouse,employee,portal,P3,"Aircon Singapore WH office","The aircon in the Singapore warehouse office stopped last night. It's 31 degrees in here and the server cupboard is in this room too.",facilities
+TKT-418016,2026-06-02T03:02:00Z,Dave Hollis,Finance,employee,email,P2,"Payroll numbers dont add up","Payroll for UK came through today and the total in PayGrid is not what hit the ledger. Its out by a fair bit, around 38k GBP. Can someone look before the controller sees it",payroll
+TKT-418017,2026-06-02T04:40:00Z,Sanjana Reddy,HR,employee,portal,P4,"Account locked","Account locked in gatehouse",password-reset
+TKT-418018,2026-06-02T05:25:00Z,Lindiwe Dube,Operations,employee,email,P2,"Customs hold Jebel Ali","Three containers held at Jebel Ali, customs want the certificate of origin re-issued with the new HS codes. Who can regenerate the docs from Tracklane? Vessel leaves Thursday.",shipment-ops
+TKT-418019,2026-06-02T06:02:00Z,Luca Bianchi,Finance,employee,portal,P3,"Stratocumulus","The Stratocumulus bill for May is in but half the lines have no cost centre so I can't book it. What do I do?",invoice-import
+TKT-418020,2026-06-02T06:48:00Z,Hannah Weiss,Sales,employee,portal,P4,"New monitor","need a second monitor for home office",hardware
+TKT-418021,2026-06-02T07:30:00Z,Grace Mensah,Customer Service,employee,chat,P3,"help","my export is empty",report-export
+TKT-418022,2026-06-02T08:15:00Z,Kwame Asante,Warehouse,employee,phone,P3,"Badge gate Felixstowe","Caller says his badge doesn't open the Felixstowe yard gate since the weekend. Security let him in manually.",security-access
+TKT-418023,2026-06-02T09:55:00Z,Ahmed Qureshi,Finance,employee,email,P3,"BUM payment not matching","Bayerische Unfug paid invoice 90021877 but it came in 212 EUR short, I think bank charges. Now 1400-20 is not reconciling. Do we write it off or chase them?",customer-payments
+TKT-418024,2026-06-02T10:40:00Z,Sven Aalto,Legal,employee,email,P3,"Shared mailbox","Please give me access to the contracts@ shared mailbox, I'm covering for Anna while she's on leave",email-collab
+TKT-418025,2026-06-02T11:43:00Z,Julia Novak,Finance,employee,portal,P3,"New joiner access","Tom Becker joined my team, he needs same access as me in Ledgerline and Procura. thx",access-request
+TKT-418026,2026-06-02T12:30:00Z,Marco Rossi,Operations,employee,portal,P4,"coffee machine","the coffee machine on 3rd floor Hamburg is leaking again",catering
+TKT-418027,2026-06-02T13:08:00Z,Sofia Herrera,Operations,employee,chat,P3,"tracklane slow","tracklane takes 2 min to open a booking today. dispatch is backing up",shipment-ops
+TKT-418028,2026-06-02T14:20:00Z,cw.lena.hoffmann,Finance,contingent,email,P3,"Access","Hi, my account expired but my contract got extended till Dec. I can't log in to anything now. My sponsor is Ahmed Qureshi",access-request
+TKT-418029,2026-06-02T15:05:00Z,Bea Santos,Customer Service,employee,portal,P4,"headset","headset mic stopped working, customers can't hear me",hardware
+TKT-418030,2026-06-02T15:59:00Z,Olu Adeyemi,Finance,employee,portal,P2,"Intercompany doesnt tie","IC between LOL Logistik GmbH and LOL UK is off by 4,812.40 for May. tried everything. close is tomorrow",ledger-close
+TKT-418031,2026-06-03T02:10:00Z,Rajesh Pillai,Operations,employee,email,P3,"VPN Chennai","VPN from Chennai office disconnects every 15-20 mins since morning. whole team affected, we can't update bookings",network-vpn
+TKT-418032,2026-06-03T02:55:00Z,Neha Joshi,Finance,employee,chat,P4,"how do I","how do I reopen a PO? the runbook link is dead",purchase-order
+TKT-418033,2026-06-03T03:40:00Z,Tomasz Wolski,Finance,employee,portal,P3,"cant see screen","where did the journal entry screen go in ledgerline?? it was there on friday",access-request
+TKT-418034,2026-06-03T04:22:00Z,Priya Nair,Finance,employee,email,P3,"RE: invoices","still not there. its been 2 days. armadillo is calling me now",invoice-import
+TKT-418035,2026-06-03T05:15:00Z,Jan de Vries,Warehouse,employee,portal,P3,"RE: Scanners down Rotterdam","scanners working again after restart but 4 of them still show yesterday's pick list",warehouse-devices
+TKT-418036,2026-06-03T06:02:00Z,Fatima Al-Sayed,HR,employee,email,P3,"Employment letters","Two drivers need employment letters for their visa renewals by Friday. Names attached.",hr-query
+TKT-418037,2026-06-03T06:44:00Z,Rachel Stein,Sales,employee,chat,P2,"RE: BUM shipment to Santos","any update? BUM's CFO emailed our CEO",shipment-ops
+TKT-418038,2026-06-03T07:26:00Z,Greta Lund,Sales,employee,portal,P4,"Microwave","The microwave in the Oslo office kitchen is broken again",facilities
+TKT-418039,2026-06-03T08:10:00Z,Kavya Iyer,Finance,employee,portal,P3,"Approver while manager on leave","Julia is on leave for 2 weeks, I need approver rights on CC-4471 in Procura until she's back",access-request
+TKT-418040,2026-06-03T08:57:00Z,Darnell Brooks,Warehouse,employee,phone,P3,"Payslip overtime","Caller says his May payslip is missing the Saturday overtime, about 14 hours. Employee E204518.",payroll
+TKT-418041,2026-06-03T09:44:00Z,Chen Wei,Finance,employee,portal,P3,"Stratocumulus feed missing","The daily Stratocumulus billing file didn't come for the 1st and 2nd. Accruals are going to be wrong",invoice-import
+TKT-418042,2026-06-03T10:31:00Z,Yusuf Demir,Sales,employee,chat,P4,".","ledgerline slow",report-export
+TKT-418043,2026-06-03T11:18:00Z,Mei Lin Tan,Warehouse,employee,portal,P3,"Dock terminal 12","Dock terminal 12 frozen on the login screen. Restarted twice.",warehouse-devices
+TKT-418044,2026-06-03T12:05:00Z,Lindiwe Dube,Operations,employee,portal,P3,"BUM customs export","Need the customs invoice export for BUM shipments to Brazil for May, Datadock times out every time I run it",report-export
+TKT-418045,2026-06-03T12:50:00Z,cw.diego.ramos,Operations,contingent,portal,P3,"Harbor enrolment","Harbor says enrolment pending since Thursday, my laptop is the one my agency gave me. Do i need to do something?",device-enrolment
+TKT-418046,2026-06-03T13:37:00Z,Hannah Weiss,Sales,employee,portal,P3,"Can't log in","Cant log in anywhere this morning. Everything says wrong password even though I didnt change it",password-reset
+TKT-418047,2026-06-03T14:24:00Z,Sofia Herrera,Operations,employee,email,P4,"Catering Thursday","Can we get lunch for the ops planning day Thursday, 18 people, room 4.02 Hamburg. 5 vegetarian, 2 halal.",catering
+TKT-418048,2026-06-03T15:11:00Z,Ahmed Qureshi,Finance,employee,portal,P3,"Unapplied cash BUM","BUM paid 3 invoices in one transfer from their Munich account, in EUR, and the bank feed put it all in suspense. Can you split it?",customer-payments
+TKT-418049,2026-06-03T15:58:00Z,Sven Aalto,Legal,employee,portal,P4,"Chair","my chair is broken, the back doesn't lock anymore",facilities
+TKT-418050,2026-06-04T02:20:00Z,Kenji Watanabe,Operations,employee,portal,P3,"export again","same as before. trial balance. worked yesterday after rerun but failing again today",report-export
+TKT-418051,2026-06-04T03:07:00Z,Rajesh Pillai,Operations,employee,chat,P3,"RE: VPN Chennai","vpn ok now but teams calls still choppy from office",network-vpn
+TKT-418052,2026-06-04T03:54:00Z,Emma Lindqvist,Finance,employee,portal,P3,"still cant create PO","You gave me the role but it says approval limit 0. Cant raise anything over zero",purchase-order
+TKT-418053,2026-06-04T04:41:00Z,Dave Hollis,Finance,employee,email,P1,"RE: Payroll numbers dont add up","Update: its not 38k anymore, the rerun made it worse, now 51k and some people in Leeds got paid twice. Controller is asking. Pls treat as priority",payroll
+TKT-418054,2026-06-04T05:28:00Z,Kwame Asante,Warehouse,employee,phone,P3,"Leave balance","Caller says his leave balance dropped by 5 days after the HR portal update and he hasn't taken leave.",hr-query
+TKT-418055,2026-06-04T06:15:00Z,Grace Mensah,Customer Service,employee,chat,P3,"RE: help","sorry, the accruals extract. its empty. 0 rows. it had rows last week",report-export
+TKT-418056,2026-06-04T07:02:00Z,Marco Rossi,Operations,employee,portal,P3,"Visitors from BUM","BUM's logistics team (4 people) visiting Hamburg on the 12th. Need visitor passes and parking.",security-access
+TKT-418057,2026-06-04T07:49:00Z,Olu Adeyemi,Finance,employee,email,P3,"Payroll journal cost centres","The May payroll journal posted without cost centres on like 40 lines, all to the default. Can this be fixed before close?",payroll
+TKT-418058,2026-06-04T08:36:00Z,Julia Novak,Finance,employee,chat,P4,"teams","cant share screen in teams since update",email-collab
+TKT-418059,2026-06-04T09:23:00Z,Rohan Kulkarni,Finance,employee,chat,P3,"invoice status","can u check if the gag invoices loaded? they said sent friday",invoice-import
+TKT-418060,2026-06-04T10:10:00Z,Jan de Vries,Warehouse,employee,phone,P2,"Wifi dock area Rotterdam","Caller says Wi-Fi in the Rotterdam dock area keeps dropping, scanners lose connection mid-pick.",network-vpn
+TKT-418061,2026-06-04T10:57:00Z,Priya Nair,Finance,employee,portal,P3,"DIH invoices duplicate","DIH invoices for janitorial came in TWICE this time, both batches, so now I have duplicates in matching. please remove one",invoice-import
+TKT-418062,2026-06-04T11:44:00Z,Tom Becker,Finance,employee,chat,P4,"pwd","locked out of procura",password-reset
+TKT-418063,2026-06-04T12:31:00Z,Sanjana Reddy,HR,employee,email,P3,"Contractor background checks","Armadillo hasn't returned background checks for 3 of the 6 Felixstowe joiners. They start Monday. Can someone chase?",security-access
+TKT-418064,2026-06-04T13:18:00Z,cw.lena.hoffmann,Finance,contingent,email,P3,"RE: Access","Thanks it works now, but i lost access to the shared close folder and Ledgerline reports. can you add those back",access-request
+TKT-418065,2026-06-04T14:05:00Z,Lindiwe Dube,Operations,employee,chat,P3,"tracklane docs","commercial invoice from tracklane prints with the old company address in Hamburg",shipment-ops
+TKT-418066,2026-06-04T14:52:00Z,Nadia Haddad,Finance,employee,portal,P3,"Suspense 2150","2150-12 suspense still has 18,300 in it from May. I think its the ASS prepayment that never got cleared",ledger-close
+TKT-418067,2026-06-04T15:39:00Z,Bea Santos,Customer Service,employee,portal,P3,"Customer can't see tracking","Kestrel Agritech says their tracking link shows 'not found' for all 4 of their shipments this week",shipment-ops
+TKT-418068,2026-06-05T02:26:00Z,Marisol Ortega,Customer Service,employee,chat,P4,"password","did the password thing again sorry. gatehouse this time",password-reset
+TKT-418069,2026-06-05T03:13:00Z,Mei Lin Tan,Warehouse,employee,portal,P3,"Scanner battery","3 scanners won't hold charge more than 2 hours. Assets SG-HS-0412, 0415, 0419",warehouse-devices
+TKT-418070,2026-06-05T04:00:00Z,Rachel Stein,Sales,employee,portal,P3,"Armadillo background check invoices","ASS sent the background check invoices for the 14 new drivers but I only see 9 in InvoiceHub. batch was IH-260604-03 i think",invoice-import
+TKT-418071,2026-06-05T04:47:00Z,Luca Bianchi,Finance,employee,email,P3,"RE: Stratocumulus","Also the credit they promised for the April outage isnt anywhere. Account manager says it was issued. Who posts credits?",invoice-import
+TKT-418072,2026-06-05T05:34:00Z,Darnell Brooks,Warehouse,employee,phone,P3,"Break room fridge","Caller says the break room fridge in Memphis is not cooling, staff lunches going bad.",catering
+TKT-418073,2026-06-05T06:21:00Z,Sven Aalto,Legal,employee,portal,P3,"Vendor ageing extract","The vendor ageing extract from Datadock has the same vendor listed twice with different totals. Is that a bug?",report-export
+TKT-418074,2026-06-05T07:08:00Z,Kavya Iyer,Finance,employee,portal,P3,"PO for Drymark","Need a PO for Drymark's extra cleaning at Memphis after the flood, quote attached, 14,200 USD",purchase-order
+TKT-418075,2026-06-05T07:55:00Z,Yusuf Demir,Sales,employee,email,P3,"Emails to BUM bouncing","every email to anyone at BUM bounces back since this morning, says rejected by recipient server",email-collab
+TKT-418076,2026-06-05T08:42:00Z,Dave Hollis,Finance,employee,email,P2,"Payroll - Leeds double payment","Following up on the double payment. HR wants to know which 6 employees and how much, today. Is someone on this?",payroll
+TKT-418077,2026-06-05T09:29:00Z,cw.oksana.petrenko,Finance,contingent,email,P3,"Onboarding","Good morning, I am new contractor for payroll team. I have received email to set up device but the link goes to page for employees. I do not have employee number. Kind regards Oksana",device-enrolment
+TKT-418078,2026-06-05T10:16:00Z,Kenji Watanabe,Operations,employee,portal,P4,"Parking Singapore","Need a parking spot at the Singapore office from July, moving from the Chennai team",facilities
+TKT-418079,2026-06-05T11:03:00Z,Fatima Al-Sayed,HR,employee,portal,P3,"HR portal access for new HRBP","Sanjana's new HRBP colleague needs access to the HR portal reports for EMEA",access-request
+TKT-418080,2026-06-05T11:50:00Z,Ahmed Qureshi,Finance,employee,email,P3,"FX difference BUM","The BUM receipt from last week was booked at the wrong EUR rate, difference is 1,904.33 on 1400-20. who fixes FX rates?",customer-payments
+TKT-418081,2026-06-05T12:37:00Z,Sofia Herrera,Operations,employee,phone,P2,"Tracklane down","Caller says Tracklane gives error 503 for everyone in Hamburg dispatch.",shipment-ops
+TKT-418082,2026-06-05T13:24:00Z,Hannah Weiss,Sales,employee,portal,P4,"Laptop slow","laptop takes 10 mins to start and fan is super loud",hardware
+TKT-418083,2026-06-05T14:11:00Z,Jan de Vries,Warehouse,employee,portal,P3,"Label printer Rotterdam","Zebra printer dock 3 Rotterdam prints labels shifted to the right, barcodes don't scan",warehouse-devices
+TKT-418084,2026-06-05T14:58:00Z,Chen Wei,Finance,employee,email,P3,"RE: Stratocumulus feed missing","files for 1st and 2nd arrived today together with the 4th. now accruals are double counted?",invoice-import
+TKT-418085,2026-06-05T15:45:00Z,Greta Lund,Sales,employee,chat,P3,"access","need access",access-request
+TKT-418086,2026-06-08T02:12:00Z,Neha Joshi,Finance,employee,portal,P3,"Reopen PO-4500331208","Reopen PO-4500331208, receipt for DIH June facilities work couldnt be posted before it closed",purchase-order
+TKT-418087,2026-06-08T02:59:00Z,Rajesh Pillai,Operations,employee,portal,P3,"Customs docs Nhava Sheva","Bill of entry rejected at Nhava Sheva for LOL-SH-4472190, consignee GST number missing on invoice",shipment-ops
+TKT-418088,2026-06-08T03:46:00Z,Olu Adeyemi,Finance,employee,portal,P2,"Suspense clearing before close","Close is Monday. 1400-35, 2150-12 and 2100-08 all have balances I can't explain. can someone help go through them",ledger-close
+TKT-418089,2026-06-08T04:33:00Z,Kwame Asante,Warehouse,employee,phone,P2,"Drivers can't start","Caller says 3 new drivers are on site at Felixstowe but can't get badges because background checks aren't back.",security-access
+TKT-418090,2026-06-08T05:20:00Z,Marisol Ortega,Customer Service,employee,portal,P4,"Password","Hi. Password reset for PayGrid please. I promise this is the last time",password-reset
+TKT-418091,2026-06-08T06:07:00Z,Sven Aalto,Legal,employee,email,P3,"SharePoint permissions","The contracts SharePoint site shows 'access denied' for the whole legal team since Friday",email-collab
+TKT-418092,2026-06-08T06:54:00Z,cw.diego.ramos,Operations,contingent,chat,P3,"RE: Harbor enrolment","it says enrolment complete now but when I open tracklane it asks me to install Company Portal and sign in with Entra, which my account cant do",device-enrolment
+TKT-418093,2026-06-08T07:41:00Z,Rachel Stein,Sales,employee,chat,P3,"armadillo again","armadillo invoices missing again. same as last time. 5 of them",invoice-import
+TKT-418094,2026-06-08T08:28:00Z,Tomasz Wolski,Finance,employee,portal,P3,"Access to PayGrid reports","I'm the new payroll analyst for EMEA and need PayGrid reporting access. Hiring manager Dave Hollis",access-request
+TKT-418095,2026-06-08T09:15:00Z,Mei Lin Tan,Warehouse,employee,portal,P4,"Cleaning Singapore","Warehouse office toilets not cleaned for 3 days, Drymark crew didn't come",facilities
+TKT-418096,2026-06-08T10:02:00Z,Luca Bianchi,Finance,employee,portal,P3,"Stratocumulus credits","still no credit posted. escalating. this is the third time i ask",invoice-import
+TKT-418097,2026-06-08T10:49:00Z,Darnell Brooks,Warehouse,employee,phone,P3,"Scanner broken","Caller says scanner screen cracked after a drop, asset MEM-HS-0877. Needs replacement.",warehouse-devices
+TKT-418098,2026-06-08T11:36:00Z,Bea Santos,Customer Service,employee,chat,P4,"teams","teams phone number not working, customers get busy tone",email-collab
+TKT-418099,2026-06-08T12:23:00Z,Ahmed Qureshi,Finance,employee,portal,P3,"Bank charges on BUM receipts","Every BUM payment comes in short by 15-25 EUR. can we set up an auto write-off rule under 30 EUR so I dont have to raise a ticket each time?",customer-payments
+TKT-418100,2026-06-08T13:10:00Z,Sanjana Reddy,HR,employee,portal,P3,"Benefits enrolment","An employee in Memphis missed the benefits enrolment window because he was on medical leave. Can the window be reopened for him?",hr-query
+TKT-418101,2026-06-08T13:57:00Z,Emma Lindqvist,Finance,employee,portal,P3,"Procura approval limit","still approval limit zero. please check. i have 4 POs waiting",purchase-order
+TKT-418102,2026-06-08T14:44:00Z,Yusuf Demir,Sales,employee,email,P3,"RE: .","sorry, ledgerline is slow AND the cost centre report shows last months numbers. is it stuck?",report-export
+TKT-418103,2026-06-08T15:31:00Z,Lindiwe Dube,Operations,employee,portal,P3,"Export encoding","The BUM customs export opens with broken characters for the German addresses, ü shows as weird symbols",report-export
+TKT-418104,2026-06-09T02:18:00Z,Jan de Vries,Warehouse,employee,phone,P3,"Payslip night allowance","Caller says night shift allowance missing from June payslip for the whole Rotterdam night team, around 20 people.",payroll
+TKT-418105,2026-06-09T03:05:00Z,Chidi Okeke,Finance,employee,portal,P3,"Invoice status GAG","GAG catering invoices for May, were they loaded? supplier says sent on the 3rd",invoice-import
+TKT-418106,2026-06-09T03:52:00Z,Kenji Watanabe,Operations,employee,portal,P2,"APAC close pack export","Close pack export failing for SG and IN entities, error ERR-DD-0412. Deadline today",report-export
+TKT-418107,2026-06-09T04:39:00Z,Fatima Al-Sayed,HR,employee,email,P3,"Leaver access","Please remove all system access for Tom Becker, last day Friday. He moved to a partner company.",access-request
+TKT-418108,2026-06-09T05:26:00Z,Sofia Herrera,Operations,employee,chat,P3,"wrong weight","booking LOL-SH-5520931 shows 18,000 kg but its 1,800. customer invoice already went out with the wrong freight charge",shipment-ops
+TKT-418109,2026-06-09T06:13:00Z,Mei Lin Tan,Warehouse,employee,phone,P2,"Warehouse Wi-Fi down","Caller says Wi-Fi down in half of the Singapore warehouse since 6am. Scanners offline in aisles 10-22.",network-vpn
+TKT-418110,2026-06-09T07:00:00Z,Olu Adeyemi,Finance,employee,portal,P3,"IC recon June","Intercompany LOL US Freight to LOL India off by 2 transactions, looks like one side booked in USD and the other in INR",ledger-close
+TKT-418111,2026-06-09T07:47:00Z,cw.oksana.petrenko,Finance,contingent,portal,P3,"Harbor","Harbor MDM asks for enrolment code, where do I get this?",device-enrolment
+TKT-418112,2026-06-09T08:34:00Z,Rachel Stein,Sales,employee,portal,P3,"Visitor passes BUM","BUM CFO and 2 others visiting Hamburg on the 18th to sort out the Santos delay. Need passes and a room with a screen.",security-access
+TKT-418113,2026-06-09T09:21:00Z,Hannah Weiss,Sales,employee,portal,P3,"Access","I need access to the thing Julia uses for approving invoices, not sure what its called",access-request
+TKT-418114,2026-06-09T10:08:00Z,Priya Nair,Finance,employee,portal,P3,"GAG invoices","GAG invoices loaded but with the wrong PO numbers, they used the old catering PO. matching fails",invoice-import
+TKT-418115,2026-06-09T10:55:00Z,Marco Rossi,Operations,employee,portal,P4,"Meeting room screen","The screen in room 3.14 Hamburg won't show laptops, HDMI and wireless both",facilities
+TKT-418116,2026-06-09T11:42:00Z,Dave Hollis,Finance,employee,portal,P3,"Payroll RCA","For the Leeds double payment, need the RCA written up by Friday for audit. Who owns this?",payroll
+TKT-418117,2026-06-09T12:29:00Z,Rajesh Pillai,Operations,employee,email,P3,"Laptop replacement","My laptop keyboard stopped working (several keys). Using external keyboard for now. Asset LT-55812",hardware
+TKT-418118,2026-06-09T13:16:00Z,Grace Mensah,Customer Service,employee,portal,P4,"password","need a password reset for datadock",password-reset
+TKT-418119,2026-06-09T14:03:00Z,Nadia Haddad,Finance,employee,portal,P3,"Rec 6100","6100-44 travel expense account off against the card feed by 3,410.10. Can't find it",ledger-close
+TKT-418120,2026-06-09T14:50:00Z,Kwame Asante,Warehouse,employee,phone,P3,"Canteen hours","Caller asks if the Felixstowe canteen can open for the night shift, currently closes at 8pm.",catering
+TKT-418121,2026-06-09T15:37:00Z,Sven Aalto,Legal,employee,email,P3,"Outlook rule","Emails from our outside counsel go straight to junk. I've marked them not junk 20 times.",email-collab
+TKT-418122,2026-06-10T02:24:00Z,Bea Santos,Customer Service,employee,portal,P3,"Remittance missing","Monsoon Textiles paid 42,000 USD with no remittance. Their AP says 'check your portal'. We don't have a portal?",customer-payments
+TKT-418123,2026-06-10T03:11:00Z,Jan de Vries,Warehouse,employee,portal,P3,"Dock terminal login","Dock terminals in Rotterdam log everyone out after 5 minutes since the update",warehouse-devices
+TKT-418124,2026-06-10T03:58:00Z,Julia Novak,Finance,employee,email,P3,"FW: Armadillo statement","Armadillo sent a statement saying 11 invoices are overdue. Half of them I've never seen. Are they stuck in InvoiceHub?",invoice-import
+TKT-418125,2026-06-10T04:45:00Z,Lindiwe Dube,Operations,employee,chat,P2,"customs","santos customs wants the packing list signed by the shipper. BUM says they sent it to us. i can't find it anywhere",shipment-ops
+TKT-418126,2026-06-10T05:32:00Z,Tomasz Wolski,Finance,employee,portal,P3,"Reset","Reset password for Ledgerline and PayGrid please",password-reset
+TKT-418127,2026-06-10T06:19:00Z,Darnell Brooks,Warehouse,employee,phone,P3,"Badge for temp workers","Caller needs 12 temporary badges for agency pickers starting tomorrow in Memphis for peak.",security-access
+TKT-418128,2026-06-10T07:06:00Z,Chen Wei,Finance,employee,portal,P3,"Stratocumulus duplicate","The billing feed loaded the 4th twice. Ledger has 2x cloud cost for that day",invoice-import
+TKT-418129,2026-06-10T07:53:00Z,Greta Lund,Sales,employee,portal,P3,"Salesforce reports export","The pipeline export to Excel only gives me 2000 rows, I have more deals than that",report-export
+TKT-418130,2026-06-10T08:40:00Z,Sanjana Reddy,HR,employee,portal,P3,"Onboarding letters","HR portal won't generate offer letters, template error. 4 offers need to go today",hr-query
+TKT-418131,2026-06-10T09:27:00Z,Ahmed Qureshi,Finance,employee,portal,P3,"BUM credit note","BUM disputed a freight charge and we issued a credit note, but their next payment was net of it AND the credit note got applied again. now the account is in credit",customer-payments
+TKT-418132,2026-06-10T10:14:00Z,Kavya Iyer,Finance,employee,portal,P3,"Remove access","Tom moved teams, please remove his approver rights in Procura. Also add them to Sanjana",access-request
+TKT-418133,2026-06-10T11:01:00Z,cw.arjun.menon,Finance,contingent,email,P3,"RE: laptop not working with LOL","Hi, any update? I still cannot work. My manager asked me to use my personal laptop instead, is that ok?",device-enrolment
+TKT-418134,2026-06-10T11:48:00Z,Sofia Herrera,Operations,employee,portal,P4,"Printer Hamburg","The office printer on floor 2 Hamburg says paper jam but there's no paper stuck",hardware
+TKT-418135,2026-06-10T12:35:00Z,Rohan Kulkarni,Finance,employee,portal,P3,"Reopen PO for ASS","Need PO-4500329904 reopened, ASS sent a late invoice for extra guards during the Hamburg audit",purchase-order
+TKT-418136,2026-06-10T13:22:00Z,Mei Lin Tan,Warehouse,employee,portal,P3,"Temperature logger alerts","Cold room temperature alerts emailing the wrong people since the mailbox change, nobody saw last night's alert",email-collab
+TKT-418137,2026-06-10T14:09:00Z,Dave Hollis,Finance,employee,email,P2,"Payroll July risk","If the Leeds issue isnt fixed before July run we'll pay those 6 twice again. Can someone confirm the fix is in?",payroll
+TKT-418138,2026-06-10T14:56:00Z,Kenji Watanabe,Operations,employee,chat,P3,"TB export","trial balance export works now but only if i pick one entity at a time. is that expected?",report-export
+TKT-418139,2026-06-10T15:43:00Z,Marco Rossi,Operations,employee,email,P4,"Catering order","can we get vegetarian options for the Thursday team lunch? 20 people",catering
+TKT-418140,2026-06-11T02:30:00Z,Rajesh Pillai,Operations,employee,portal,P3,"Tracking Kestrel","Kestrel's container LOL-SH-6630218 shows 'departed' in Tracklane but the carrier says it's still at Chennai port",shipment-ops
+TKT-418141,2026-06-11T03:17:00Z,Fatima Al-Sayed,HR,employee,portal,P3,"Background check drivers","Armadillo returned 2 driver checks as 'inconclusive'. What does that mean for their start date?",security-access
+TKT-418142,2026-06-11T04:04:00Z,Olu Adeyemi,Finance,employee,portal,P3,"Payroll to GL mapping","New cost centre CC-5120 was created in Ledgerline but PayGrid still maps those people to the old one. June payroll went to the wrong place",payroll
+TKT-418143,2026-06-11T04:51:00Z,Hannah Weiss,Sales,employee,portal,P4,"Docking station","dock doesn't charge my laptop anymore, screens still work",hardware
+TKT-418144,2026-06-11T05:38:00Z,Priya Nair,Finance,employee,chat,P4,"ok","is the armadillo thing fixed? they're still calling",invoice-import
+TKT-418145,2026-06-11T06:25:00Z,Jan de Vries,Warehouse,employee,phone,P3,"Leave request stuck","Caller says his leave request in the HR portal has been 'pending approval' for 3 weeks, his manager left the company.",hr-query
+TKT-418146,2026-06-11T07:12:00Z,Sven Aalto,Legal,employee,portal,P4,"Test","test please ignore",other
+TKT-418147,2026-06-11T07:59:00Z,Yusuf Demir,Sales,employee,chat,P3,"vpn","vpn doesnt work in the hotel in Lyon, works on phone hotspot",network-vpn
+TKT-418148,2026-06-11T08:46:00Z,cw.lena.hoffmann,Finance,contingent,portal,P3,"Background check invoice","Question from Armadillo: they say our PO for background checks is exhausted and they can't invoice July. Who handles?",purchase-order
+TKT-418149,2026-06-11T09:33:00Z,Nadia Haddad,Finance,employee,portal,P3,"FX revaluation","Month-end FX revaluation didn't run for LOL Singapore, EUR balances still at May rates",ledger-close
+TKT-418150,2026-06-11T10:20:00Z,Darnell Brooks,Warehouse,employee,phone,P3,"Label printer ribbon","Caller asks who orders ribbons for the label printers, Memphis has 2 days left",warehouse-devices
+TKT-418151,2026-06-11T11:07:00Z,Grace Mensah,Customer Service,employee,email,P3,"Customer emails not arriving","Customers say they emailed the support mailbox but nothing shows up since yesterday afternoon",email-collab
+TKT-418152,2026-06-11T11:54:00Z,Emma Lindqvist,Finance,employee,portal,P3,"PO for Stratocumulus","Need the annual PO for Stratocumulus renewed, current one ends June 30, 1.2M USD",purchase-order
+TKT-418153,2026-06-11T12:41:00Z,Rachel Stein,Sales,employee,chat,P4,"thanks","got the passes thanks!!",other
+TKT-418154,2026-06-11T13:28:00Z,Kwame Asante,Warehouse,employee,phone,P2,"Yard gate","Caller says the Felixstowe yard gate reader is dead, trucks queuing on the road, guard opening manually.",security-access
+TKT-418155,2026-06-11T14:15:00Z,Chen Wei,Finance,employee,portal,P3,"Credits posting","Stratocumulus finally sent the April and May credits as one credit memo. which months do I post them against?",invoice-import
+TKT-418156,2026-06-11T15:02:00Z,Marisol Ortega,Customer Service,employee,portal,P4,"New phone","my work phone screen cracked, need a replacement",hardware
+TKT-418157,2026-06-12T02:49:00Z,Lindiwe Dube,Operations,employee,portal,P3,"Certificate of origin","Tracklane generates the certificate of origin with the wrong country for BUM's Czech-built machines",shipment-ops
+TKT-418158,2026-06-12T03:36:00Z,Tomasz Wolski,Finance,employee,portal,P3,"Payroll report blank","PayGrid variance report comes out blank for EMEA, other regions fine",report-export
+TKT-418159,2026-06-12T04:23:00Z,Mei Lin Tan,Warehouse,employee,portal,P3,"Pest control","Saw rats near the Singapore loading bay again. Drymark was supposed to come Tuesday.",facilities
+TKT-418160,2026-06-12T05:10:00Z,Ahmed Qureshi,Finance,employee,email,P3,"Cross-border receipt","Kestrel paid from their Indian entity in INR instead of USD. Bank converted it and now it's 3% short. Chase them or write off?",customer-payments
+TKT-418161,2026-06-12T05:57:00Z,Sofia Herrera,Operations,employee,portal,P3,"Access to Tracklane admin","I'm the new dispatch lead, need Tracklane admin to fix booking templates",access-request
+TKT-418162,2026-06-12T06:44:00Z,Julia Novak,Finance,employee,portal,P3,"Approval workflow","Invoices over 50k aren't routing to the controller for approval anymore, they auto-approve. Found 3 already paid.",invoice-import
+TKT-418163,2026-06-12T07:31:00Z,Rajesh Pillai,Operations,employee,chat,P4,"monitor","second monitor flickering",hardware
+TKT-418164,2026-06-12T08:18:00Z,Sanjana Reddy,HR,employee,portal,P3,"Payslip access","Warehouse staff in Felixstowe can't open payslips on their phones, the HR portal says 'unsupported browser'",hr-query
+TKT-418165,2026-06-12T09:05:00Z,cw.diego.ramos,Operations,contingent,portal,P3,"access to procura","now device works (thanks) but i dont have access to tracklane bookings. my sponsor is Sofia",access-request
+TKT-418166,2026-06-12T09:52:00Z,Jan de Vries,Warehouse,employee,phone,P2,"Scanners wrong location","Caller says scanners in Rotterdam show stock in the wrong aisles after last night's sync, pickers can't find anything.",warehouse-devices
+TKT-418167,2026-06-12T10:39:00Z,Luca Bianchi,Finance,employee,portal,P3,"Stratocumulus invoice tags","Can we get Stratocumulus to tag everything with cost centres? Every month I spend a day fixing this",invoice-import
+TKT-418168,2026-06-12T11:26:00Z,Greta Lund,Sales,employee,portal,P4,"Parking Oslo","The parking barrier at Oslo doesn't read my badge anymore",security-access
+TKT-418169,2026-06-12T12:13:00Z,Olu Adeyemi,Finance,employee,portal,P2,"Close blocked","Ledgerline won't let me close June for LOL India, says unposted journals exist but the list is empty",ledger-close
+TKT-418170,2026-06-12T13:00:00Z,Bea Santos,Customer Service,employee,phone,P3,"Customer invoice copy","Caller from Monsoon Textiles wants a copy of invoice 90023311, our portal link gives 404",customer-payments
+TKT-418171,2026-06-12T13:47:00Z,Dave Hollis,Finance,employee,portal,P3,"Payroll sign-off","Can IT confirm in writing that the July payroll run has the fix for the Leeds duplicates? Audit wants it",payroll
+TKT-418172,2026-06-12T14:34:00Z,Kenji Watanabe,Operations,employee,portal,P3,"Singapore office aircon","Aircon in meeting rooms on 5th floor SG blowing warm",facilities
+TKT-418173,2026-06-12T15:21:00Z,Hannah Weiss,Sales,employee,email,P3,"Calendar sync","my outlook calendar on phone doesn't show meetings accepted on laptop",email-collab
+TKT-418174,2026-06-15T02:08:00Z,Darnell Brooks,Warehouse,employee,phone,P3,"Overtime approval","Caller says overtime he approved for 8 staff didn't reach payroll, they were paid base only",payroll
+TKT-418175,2026-06-15T02:55:00Z,Neha Joshi,Finance,employee,portal,P3,"PO reopen DIH","DIH invoice for the Memphis flood cleanup came after the PO closed, PO-4500331877",purchase-order
+TKT-418176,2026-06-15T03:42:00Z,Lindiwe Dube,Operations,employee,email,P2,"RE: customs","Santos customs now fining us per day. We need the signed packing list today. Escalating to Marco.",shipment-ops
+TKT-418177,2026-06-15T04:29:00Z,Fatima Al-Sayed,HR,employee,portal,P4,"Team lunch","Farewell lunch for Tom on Friday, 12 people, Hamburg canteen private room please",catering
+TKT-418178,2026-06-15T05:16:00Z,Kwame Asante,Warehouse,employee,phone,P3,"Scanner holster","Caller asks for 10 replacement scanner holsters and wrist straps for Felixstowe",warehouse-devices
+TKT-418179,2026-06-15T06:03:00Z,Mei Lin Tan,Warehouse,employee,portal,P3,"Contractor laptop","Agency contractor for inventory count got a laptop from his agency, doesn't have our build, Harbor says device not recognised",device-enrolment
+TKT-418180,2026-06-15T06:50:00Z,Rachel Stein,Sales,employee,email,P3,"BUM portal access","BUM's logistics lead wants read access to Tracklane for their shipments. Is that allowed?",access-request
+TKT-418181,2026-06-15T07:37:00Z,Chidi Okeke,Finance,employee,chat,P4,"dih","dih invoices loaded? pls check",invoice-import
+TKT-418182,2026-06-15T08:24:00Z,Yusuf Demir,Sales,employee,portal,P4,"Keyboard","laptop keyboard missing 2 keys",hardware
+TKT-418183,2026-06-15T09:11:00Z,Nadia Haddad,Finance,employee,portal,P3,"Accrual reversal","June accruals for Stratocumulus reversed twice on the 1st, now cloud cost is negative for the month",ledger-close
+TKT-418184,2026-06-15T09:58:00Z,Sofia Herrera,Operations,employee,chat,P2,"tracklane again","503 again in dispatch. same as last week",shipment-ops
+TKT-418185,2026-06-15T10:45:00Z,Sven Aalto,Legal,employee,portal,P3,"Contract repository export","Need an export of all supplier contracts expiring this year from the contracts site",report-export
+TKT-418186,2026-06-15T11:32:00Z,Grace Mensah,Customer Service,employee,phone,P3,"Customer short payment","Caller from customer service says BUM paid invoice 90024410 twice by mistake and wants a refund",customer-payments
+TKT-418187,2026-06-15T12:19:00Z,Tom Becker,Finance,employee,portal,P3,"Leaver","I'm leaving LOL on Friday, do I need to do anything with my access or will it just stop?",access-request
+TKT-418188,2026-06-15T13:06:00Z,cw.oksana.petrenko,Finance,contingent,email,P3,"RE: Harbor","thank you for the code. device is enrolled. but it asks me for a second factor and I do not have LOL phone app",device-enrolment
+TKT-418189,2026-06-15T13:53:00Z,Marco Rossi,Operations,employee,portal,P4,"Desk move","Moving 6 people from floor 3 to floor 5 Hamburg next Monday, need desks and network ports",facilities
+TKT-418190,2026-06-15T14:40:00Z,Julia Novak,Finance,employee,portal,P3,"Approval workflow update","Follow up: 2 more invoices over 50k auto-approved over the weekend. Can we switch off auto-approve until fixed?",invoice-import
+TKT-418191,2026-06-15T15:27:00Z,Rajesh Pillai,Operations,employee,phone,P3,"Chennai badge reader","Caller says the Chennai office main door badge reader beeps red for everyone since 9am",security-access
+TKT-418192,2026-06-16T02:14:00Z,Jan de Vries,Warehouse,employee,portal,P3,"Rota app","Night shift can't see next week's rota in the HR portal, only day shift shows",hr-query
+TKT-418193,2026-06-16T03:01:00Z,Luca Bianchi,Finance,employee,portal,P3,"Forecast export","Budget vs actual export for FP&A takes 40 minutes then fails",report-export
+TKT-418194,2026-06-16T03:48:00Z,Hannah Weiss,Sales,employee,portal,P3,"Can't join Teams calls","Teams says 'can't connect to meeting' for external customer calls only",email-collab
+TKT-418195,2026-06-16T04:35:00Z,Emma Lindqvist,Finance,employee,portal,P3,"PO approval limit still","3rd time asking. limit still 0. my manager has approved it twice",purchase-order
+TKT-418196,2026-06-16T05:22:00Z,Kenji Watanabe,Operations,employee,portal,P3,"VPN from airport","vpn blocked at Changi airport wifi, can't approve urgent bookings",network-vpn
+TKT-418197,2026-06-16T06:09:00Z,Darnell Brooks,Warehouse,employee,phone,P4,"Vending machine","Caller says the Memphis vending machine takes money but doesn't give anything",catering
+TKT-418198,2026-06-16T06:56:00Z,Ahmed Qureshi,Finance,employee,portal,P3,"Dunning letters BUM","BUM got a dunning letter for an invoice they paid 3 weeks ago. They're annoyed. Cash was applied to the wrong invoice?",customer-payments
+TKT-418199,2026-06-16T07:43:00Z,Sanjana Reddy,HR,employee,email,P3,"Contractor background check","Armadillo says they need a signed consent form for the background check but the form link in our onboarding email is broken",security-access
+TKT-418200,2026-06-16T08:30:00Z,Priya Nair,Finance,employee,portal,P3,"InvoiceHub batch status","Can you check batch IH-260615-11? its been processing since 6am",invoice-import
+TKT-418201,2026-06-16T09:17:00Z,Lindiwe Dube,Operations,employee,portal,P3,"Customs cleared","Santos cleared this morning. Can someone check why the signed packing list never reached us? BUM sent it to customs-docs@ on the 2nd",email-collab
+TKT-418202,2026-06-16T10:04:00Z,Mei Lin Tan,Warehouse,employee,phone,P2,"Cold room door","Caller says the cold room door badge reader in Singapore won't lock, door stays open, pharma stock inside",security-access
+TKT-418203,2026-06-16T10:51:00Z,Tomasz Wolski,Finance,employee,portal,P3,"Night allowance fix","The Rotterdam night allowance issue, was it a config change? need to explain to the works council",payroll
+TKT-418204,2026-06-16T11:38:00Z,Greta Lund,Sales,employee,email,P4,"Is this legit?","Got an email saying my mailbox is full and to click a link to upgrade. Looks weird. Attached.",other
+TKT-418205,2026-06-16T12:25:00Z,Bea Santos,Customer Service,employee,portal,P3,"Tracking link","Customers getting tracking emails with someone else's shipment number",shipment-ops
+TKT-418206,2026-06-16T13:12:00Z,Rohan Kulkarni,Finance,employee,portal,P3,"Invoice on hold","Armadillo invoice 2026-0611 on hold in InvoiceHub, reason says 'price variance' but the PO price is right",invoice-import
+TKT-418207,2026-06-16T13:59:00Z,Jan de Vries,Warehouse,employee,phone,P3,"Forklift terminal","Caller says the forklift mounted terminal on truck 4 Rotterdam shows a blank screen",warehouse-devices
+TKT-418208,2026-06-16T14:46:00Z,Sven Aalto,Legal,employee,portal,P3,"Access to contracts system","New paralegal starting Monday needs the contracts SharePoint and the legal shared mailbox",access-request
+TKT-418209,2026-06-16T15:33:00Z,Marisol Ortega,Customer Service,employee,chat,P4,"locked","locked out of tracklane now",password-reset
+TKT-418210,2026-06-17T02:20:00Z,Rajesh Pillai,Operations,employee,portal,P3,"GST invoice format","Indian customers need GST-compliant invoices with QR code. Tracklane invoice template doesn't have it",shipment-ops
+TKT-418211,2026-06-17T03:07:00Z,Olu Adeyemi,Finance,employee,email,P3,"RE: Close blocked","Found it, there was a journal stuck in 'draft' under someone who left. Can you reassign it so I can post?",ledger-close
+TKT-418212,2026-06-17T03:54:00Z,Kwame Asante,Warehouse,employee,phone,P3,"Payslip deductions","Caller says there's a deduction called 'ADJ-02' on his payslip he doesn't recognise, 180 GBP",payroll
+TKT-418213,2026-06-17T04:41:00Z,Julia Novak,Finance,employee,chat,P3,"approvals","any news on the 50k approval thing? controller asking daily",invoice-import
+TKT-418214,2026-06-17T05:28:00Z,Hannah Weiss,Sales,employee,portal,P4,"Printer","cant print to the floor 4 printer from my laptop",hardware
+TKT-418215,2026-06-17T06:15:00Z,Fatima Al-Sayed,HR,employee,portal,P3,"Offboarding contractor","Contractor CW-55102 contract ended early. Please disable access and arrange laptop return to her agency",access-request
+TKT-418216,2026-06-17T07:02:00Z,Darnell Brooks,Warehouse,employee,phone,P2,"Memphis network","Caller says the whole Memphis site lost network at 6:40, phones and scanners down",network-vpn
+TKT-418217,2026-06-17T07:49:00Z,Nadia Haddad,Finance,employee,portal,P3,"Bank rec LOL UK","LOL UK bank rec has 14 unmatched items from the new bank feed format",ledger-close
+TKT-418218,2026-06-17T08:36:00Z,Sofia Herrera,Operations,employee,portal,P3,"Booking template","Tracklane booking template for reefer containers doesn't have the temperature field anymore",shipment-ops
+TKT-418219,2026-06-17T09:23:00Z,Chen Wei,Finance,employee,portal,P3,"Stratocumulus PO exhausted","Stratocumulus June invoice rejected in InvoiceHub, PO has no remaining value",purchase-order
+TKT-418220,2026-06-17T10:10:00Z,Marco Rossi,Operations,employee,portal,P4,"Lights","Lights in the Hamburg ops room flicker all day, giving people headaches",facilities
+TKT-418221,2026-06-17T10:57:00Z,cw.arjun.menon,Finance,contingent,email,P3,"RE: RE: laptop not working with LOL","Hi, working now after Harbor enrolment, thank you. But I cannot open the payroll folder in the shared drive",access-request
+TKT-418222,2026-06-17T11:44:00Z,Grace Mensah,Customer Service,employee,portal,P3,"Support mailbox rules","Auto-reply on the support mailbox says we're closed for a holiday that was last month",email-collab
+TKT-418223,2026-06-17T12:31:00Z,Ahmed Qureshi,Finance,employee,portal,P3,"Refund BUM","Approved the refund for BUM's double payment of invoice 90024410. How do I pay out a customer in EUR?",customer-payments
+TKT-418224,2026-06-17T13:18:00Z,Lindiwe Dube,Operations,employee,portal,P3,"HS code update","New HS codes from July 1 need loading into Tracklane or all EU export docs will be wrong",shipment-ops
+TKT-418225,2026-06-17T14:05:00Z,Sanjana Reddy,HR,employee,portal,P3,"Probation reminders","HR portal stopped sending probation review reminders to managers",hr-query
+TKT-418226,2026-06-17T14:52:00Z,Yusuf Demir,Sales,employee,chat,P4,"teams audio","teams audio echo on every call",hardware
+TKT-418227,2026-06-17T15:39:00Z,Mei Lin Tan,Warehouse,employee,portal,P3,"Scanner firmware","Only the new scanners (SG-HS-05xx) fail to read damaged barcodes, old ones fine",warehouse-devices
+TKT-418228,2026-06-18T02:26:00Z,Kavya Iyer,Finance,employee,portal,P3,"Approver rights removal","Julia is back. please remove my temporary approver rights on CC-4471",access-request
+TKT-418229,2026-06-18T03:13:00Z,Dave Hollis,Finance,employee,email,P3,"Payroll cutoff","Can we move the July payroll cutoff by 2 days? Overtime from the peak weekend won't make it otherwise",payroll
+TKT-418230,2026-06-18T04:00:00Z,Priya Nair,Finance,employee,portal,P3,"Duplicate supplier","Armadillo exists twice in InvoiceHub with different bank details. Which one is right? Something feels off",invoice-import
+TKT-418231,2026-06-18T04:47:00Z,Kenji Watanabe,Operations,employee,portal,P3,"Tracklane user for BUM","BUM wants their Singapore team to see shipment ETAs. Can we give them logins or a report?",access-request
+TKT-418232,2026-06-18T05:34:00Z,Bea Santos,Customer Service,employee,portal,P4,"Headset","need a new headset, the cable is broken",hardware
+TKT-418233,2026-06-18T06:21:00Z,Jan de Vries,Warehouse,employee,phone,P3,"Visitor from Armadillo","Caller says Armadillo auditor coming to Rotterdam tomorrow, needs a pass for the dock area",security-access
+TKT-418234,2026-06-18T07:08:00Z,Luca Bianchi,Finance,employee,portal,P3,"Datadock refresh","Datadock numbers are 2 days behind Ledgerline, FP&A deck due tomorrow",report-export
+TKT-418235,2026-06-18T07:55:00Z,Rajesh Pillai,Operations,employee,chat,P4,"catering chennai","can we get tea and snacks for 30 in the Chennai town hall friday",catering
+TKT-418236,2026-06-18T08:42:00Z,Emma Lindqvist,Finance,employee,portal,P3,"Thank you","limit fixed finally, thanks. but now I can approve my own POs which seems wrong?",purchase-order
+TKT-418237,2026-06-18T09:29:00Z,Olu Adeyemi,Finance,employee,portal,P3,"Intercompany netting","Monthly intercompany netting run failed for EMEA entities, no error message",ledger-close
+TKT-418238,2026-06-18T10:16:00Z,cw.lena.hoffmann,Finance,contingent,portal,P3,"Laptop replacement","My agency is replacing my laptop next week. Do I need to go through Harbor again?",device-enrolment
+TKT-418239,2026-06-18T11:03:00Z,Fatima Al-Sayed,HR,employee,portal,P3,"Right to work checks","Need to know which of the Felixstowe agency drivers have right-to-work checks done by Armadillo, audit next week",security-access
+TKT-418240,2026-06-18T11:50:00Z,Sofia Herrera,Operations,employee,phone,P2,"Truck GPS","Caller says fleet GPS stopped updating in Tracklane for all Hamburg trucks since 10am",shipment-ops
+TKT-418241,2026-06-18T12:37:00Z,Tomasz Wolski,Finance,employee,portal,P4,"password expired","password expired while on holiday, cant log in to paygrid",password-reset
+TKT-418242,2026-06-18T13:24:00Z,Greta Lund,Sales,employee,portal,P3,"CRM access for new rep","New sales rep for the Nordics starting Monday, needs CRM and Tracklane read only",access-request
+TKT-418243,2026-06-18T14:11:00Z,Ahmed Qureshi,Finance,employee,portal,P3,"Customer statement","Monsoon Textiles wants a statement of account for H1. The statement report only goes back 90 days",report-export
+TKT-418244,2026-06-18T14:58:00Z,Darnell Brooks,Warehouse,employee,phone,P3,"Break room","Caller says the Memphis break room AC has been off for a week, 35 degrees in there",facilities
+TKT-418245,2026-06-18T15:45:00Z,Marco Rossi,Operations,employee,email,P3,"Tracklane training","Can we get Tracklane accounts for 5 summer interns in Hamburg ops? Read only is fine",access-request
+TKT-418246,2026-06-19T02:32:00Z,Mei Lin Tan,Warehouse,employee,portal,P4,"Water dispenser","Water dispenser on the Singapore warehouse floor empty for 2 days",catering
+TKT-418247,2026-06-19T03:19:00Z,Julia Novak,Finance,employee,portal,P2,"Duplicate payment Armadillo","We paid Armadillo invoice 2026-0588 twice, once to each of their bank accounts. Priya flagged the duplicate supplier last week",invoice-import
+TKT-418248,2026-06-19T04:06:00Z,Kwame Asante,Warehouse,employee,phone,P3,"Radio","Caller asks for 4 new radios for Felixstowe yard marshals, two stopped charging",hardware
+TKT-418249,2026-06-19T04:53:00Z,Lindiwe Dube,Operations,employee,portal,P3,"Dangerous goods docs","Dangerous goods declaration export from Tracklane cuts off the UN number field",report-export
+TKT-418250,2026-06-19T05:40:00Z,Nadia Haddad,Finance,employee,chat,P3,"close","ledgerline close checklist doesn't show June tasks",ledger-close
+TKT-418251,2026-06-19T06:27:00Z,Hannah Weiss,Sales,employee,portal,P3,"Laptop stolen","My laptop was stolen from my car last night in Frankfurt. Police report attached. Asset LT-48120",hardware
+TKT-418252,2026-06-19T07:14:00Z,Sanjana Reddy,HR,employee,portal,P3,"Payroll data for HR","Need a report of everyone paid overtime in May for the peak bonus. PayGrid export keeps timing out",report-export
+TKT-418253,2026-06-19T08:01:00Z,Rajesh Pillai,Operations,employee,portal,P3,"Customs broker access","Our Chennai customs broker needs to upload docs to Tracklane. They're an external company",access-request
+TKT-418254,2026-06-19T08:48:00Z,Rachel Stein,Sales,employee,portal,P3,"BUM rate card","BUM's new rate card for H2 needs loading so quotes stop using the old rates",shipment-ops
+TKT-418255,2026-06-19T09:35:00Z,Chidi Okeke,Finance,employee,portal,P3,"Vendor bank change request","Got an email from 'Drymark' asking to change their bank account. It's from a gmail address. Is this real?",other
+TKT-418256,2026-06-19T10:22:00Z,Sofia Herrera,Operations,employee,chat,P3,"gps","gps back but the trucks show in the North Sea lol",shipment-ops
+TKT-418257,2026-06-19T11:09:00Z,Jan de Vries,Warehouse,employee,phone,P2,"Rotterdam Wi-Fi again","Caller says dock Wi-Fi dropping again, same as 4th June, scanners losing picks",network-vpn
+TKT-418258,2026-06-19T11:56:00Z,Kavya Iyer,Finance,employee,portal,P3,"PO for Gastro Alliance","Need a new PO for GAG, H2 catering across Hamburg and Rotterdam, contract attached",purchase-order
+TKT-418259,2026-06-19T12:43:00Z,Tomasz Wolski,Finance,employee,portal,P3,"ADJ-02 deduction","Several warehouse staff asking about an ADJ-02 deduction. Looks like the Leeds correction hit Felixstowe people too?",payroll
+TKT-418260,2026-06-19T13:30:00Z,Grace Mensah,Customer Service,employee,portal,P4,"Password reset","reset for gatehouse please, new phone so authenticator gone",password-reset
+TKT-418261,2026-06-22T02:17:00Z,Mei Lin Tan,Warehouse,employee,portal,P3,"Contractor device enrolled","Inventory contractor's laptop enrolled in Harbor finally, but WMS won't open, says unsupported device",device-enrolment
+TKT-418262,2026-06-22T03:04:00Z,Olu Adeyemi,Finance,employee,portal,P3,"Audit request","External auditors want a list of all manual journals over 100k in H1. Ledgerline report doesn't have a threshold filter",report-export
+TKT-418263,2026-06-22T03:51:00Z,Darnell Brooks,Warehouse,employee,phone,P3,"Badge photos","Caller says 12 peak temps badges printed without photos, security won't accept them",security-access
+TKT-418264,2026-06-22T04:38:00Z,Luca Bianchi,Finance,employee,email,P3,"Cloud cost by team","Can Stratocumulus invoices be split by team automatically? We keep arguing about who owns what",invoice-import
+TKT-418265,2026-06-22T05:25:00Z,Marisol Ortega,Customer Service,employee,portal,P4,"Monitor","monitor went black, power light on",hardware
+TKT-418266,2026-06-22T06:12:00Z,Lindiwe Dube,Operations,employee,portal,P2,"Shipment misdelivered","BUM machine for Kestrel delivered to the wrong warehouse in Long Beach. Tracklane shows the old address on the booking",shipment-ops
+TKT-418267,2026-06-22T06:59:00Z,Fatima Al-Sayed,HR,employee,portal,P3,"Leave policy question","Does the new parental leave policy apply to contractors? Getting asked a lot",hr-query
+TKT-418268,2026-06-22T07:46:00Z,Ahmed Qureshi,Finance,employee,portal,P3,"Unapplied receipts June","About 60k in unapplied receipts for June, mostly BUM and Kestrel. Need help matching before close",customer-payments
+TKT-418269,2026-06-22T08:33:00Z,Kenji Watanabe,Operations,employee,portal,P4,"Keyboard Singapore","need a keyboard with UK layout, office only has US",hardware
+TKT-418270,2026-06-22T09:20:00Z,Priya Nair,Finance,employee,chat,P3,"armadillo bank","is the armadillo bank thing sorted? i have 6 invoices to pay",invoice-import
+TKT-418271,2026-06-22T10:07:00Z,Sven Aalto,Legal,employee,email,P3,"Litigation hold","Need a mailbox hold on 3 former employees' mailboxes for a dispute. Names attached, confidential",email-collab
+TKT-418272,2026-06-22T10:54:00Z,Kwame Asante,Warehouse,employee,phone,P3,"Canteen night shift","Caller follows up on night shift canteen request, no reply in 2 weeks",catering
+TKT-418273,2026-06-22T11:41:00Z,Sofia Herrera,Operations,employee,portal,P3,"Driver app","Drivers say the Tracklane driver app asks them to log in every stop",shipment-ops
+TKT-418274,2026-06-22T12:28:00Z,Nadia Haddad,Finance,employee,portal,P3,"Card feed","Corporate card feed didn't import for June 19-21, expense reconciliation stuck",ledger-close
+TKT-418275,2026-06-22T13:15:00Z,Hannah Weiss,Sales,employee,portal,P3,"Replacement laptop","Following up on stolen laptop. Need replacement before customer visit Thursday",hardware
+TKT-418276,2026-06-22T14:02:00Z,Rohan Kulkarni,Finance,employee,portal,P3,"GAG PO match","GAG invoices keep failing match because they bill per head and PO is per month",invoice-import
+TKT-418277,2026-06-22T14:49:00Z,Jan de Vries,Warehouse,employee,portal,P3,"Scanner accessories","Need 20 new scanner batteries for Rotterdam, current ones swell",warehouse-devices
+TKT-418278,2026-06-22T15:36:00Z,Sanjana Reddy,HR,employee,portal,P3,"Employee file access","Manager asking to see a team member's HR file. What's allowed?",hr-query
+TKT-418279,2026-06-23T02:23:00Z,Rajesh Pillai,Operations,employee,chat,P2,"network chennai","chennai office internet down, whole floor",network-vpn
+TKT-418280,2026-06-23T03:10:00Z,Julia Novak,Finance,employee,portal,P3,"Supplier bank change process","After the Armadillo thing, what's the actual process to change supplier bank details? Who verifies?",invoice-import
+TKT-418281,2026-06-23T03:57:00Z,cw.diego.ramos,Operations,contingent,chat,P4,"password","password reset for tracklane pls",password-reset
+TKT-418282,2026-06-23T04:44:00Z,Greta Lund,Sales,employee,portal,P3,"Quote export","Quote PDFs from Tracklane show prices in EUR even when customer currency is NOK",report-export
+TKT-418283,2026-06-23T05:31:00Z,Darnell Brooks,Warehouse,employee,phone,P2,"Dock door sensor","Caller says dock door 3 sensor stuck open, alarm going off every minute in Memphis",facilities
+TKT-418284,2026-06-23T06:18:00Z,Chen Wei,Finance,employee,portal,P3,"Cloud credits posted wrong","The Stratocumulus credit memo got posted to May but May is closed. Now June is short",invoice-import
+TKT-418285,2026-06-23T07:05:00Z,Lindiwe Dube,Operations,employee,email,P3,"Customs mailbox size","customs-docs@ mailbox is full, customs brokers getting bounces",email-collab
+TKT-418286,2026-06-23T07:52:00Z,Dave Hollis,Finance,employee,portal,P3,"Payroll access removal","Please remove PayGrid access for 3 people who moved out of payroll last quarter. Found during access review",access-request
+TKT-418287,2026-06-23T08:39:00Z,Mei Lin Tan,Warehouse,employee,phone,P3,"Temperature logger","Caller says cold room logger in Singapore shows 0 degrees but the room is at 4, which one is right?",warehouse-devices
+TKT-418288,2026-06-23T09:26:00Z,Marco Rossi,Operations,employee,portal,P3,"Interns badges","5 summer interns starting July 1 in Hamburg, need badges, HR has sent the details",security-access
+TKT-418289,2026-06-23T10:13:00Z,Ahmed Qureshi,Finance,employee,chat,P3,"bum","BUM called again about the dunning letter. can we stop dunning for them until it's sorted",customer-payments
+TKT-418290,2026-06-23T11:00:00Z,Kwame Asante,Warehouse,employee,phone,P4,"Payslip password","Caller can't open payslip PDF, asks what the password is",hr-query
+TKT-418291,2026-06-23T11:47:00Z,Tom Becker,Finance,employee,email,P4,"last day","last day today, thanks for all the help. laptop is with Julia",other
+TKT-418292,2026-06-23T12:34:00Z,Sofia Herrera,Operations,employee,portal,P3,"Reefer alerts","Reefer temperature alerts from containers not reaching the dispatch mailbox since Friday",email-collab
+TKT-418293,2026-06-23T13:21:00Z,Olu Adeyemi,Finance,employee,portal,P2,"June close timing","Can the Ledgerline close batch run at 22:00 instead of 02:00? APAC keeps missing it",ledger-close
+TKT-418294,2026-06-23T14:08:00Z,Yusuf Demir,Sales,employee,chat,P4,"vpn again","vpn slow from the Lyon customer site again",network-vpn
+TKT-418295,2026-06-23T14:55:00Z,Bea Santos,Customer Service,employee,portal,P3,"Customer portal invoices","Customers can't download invoices from the customer portal, all links 404 since Monday",customer-payments
+TKT-418296,2026-06-23T15:42:00Z,Fatima Al-Sayed,HR,employee,portal,P3,"HR portal slow","HR portal takes a minute per page, can't finish the new joiner forms",hr-query
+TKT-418297,2026-06-24T02:29:00Z,Jan de Vries,Warehouse,employee,phone,P3,"Printer toner","Caller asks for toner for the Rotterdam office printer, out since Monday",hardware
+TKT-418298,2026-06-24T03:16:00Z,Priya Nair,Finance,employee,portal,P3,"DIH invoices July","DIH says they will send all July invoices as one PDF with 40 pages. Can InvoiceHub split it?",invoice-import
+TKT-418299,2026-06-24T04:03:00Z,Kenji Watanabe,Operations,employee,portal,P3,"Customs Singapore","Singapore customs portal rejecting our XML since their update, 6 shipments waiting",shipment-ops
+TKT-418300,2026-06-24T04:50:00Z,Lindiwe Dube,Operations,employee,portal,P4,"coffee","the coffee machine on 3rd floor Hamburg is leaking again. third time this month",catering
