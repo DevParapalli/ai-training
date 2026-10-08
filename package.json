@@ -1,0 +1,21 @@
+{
+  "name": "ai-training-decks",
+  "private": true,
+  "type": "module",
+  "description": "Web builds of the class decks with slidev-theme-proxima. The Typst decks in decks/*.typ remain the print source.",
+  "scripts": {
+    "dev": "slidev decks/class03.md",
+    "build": "slidev build decks/class03.md --out build/web/class03",
+    "export": "slidev export decks/class03.md --output build/class03-web.pdf",
+    "titles": "node ../proxima/deck/scripts/titles.mjs decks/class03.md"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^53.0.0",
+    "playwright-chromium": "^1.64.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "markdown-it": "^14.1.0"
+    }
+  }
+}

@@ -31,6 +31,7 @@ docs/proposal-blank.typ  capstone proposal, blank one-page worksheet
 decks/course.typ     course-wide facts: company, systems, the running ticket
 decks/theme.typ      course theme on top of Centauri
 decks/classNN.typ    one deck per class; per-class facts in a #let block at the top
+decks/class03.md     class 3 as a web deck (Slidev, slidev-theme-proxima)
 code/classNN/        reference code walked through in class
 docs/                pre-reading and handouts
 local/               organisation-specific material, never committed
@@ -54,6 +55,18 @@ typst compile --root . --input mode=handout decks/class01.typ build/class01-hand
 ```
 
 `scripts/build.sh` builds every class in all three forms.
+
+### Web build
+
+`decks/class03.md` is the same class as a web deck, built with [`slidev-theme-proxima`](https://github.com/DevParapalli/proxima/tree/main/deck) from a Proxima checkout beside this repository (`../proxima`). The Typst deck remains the print source; the markdown carries the class facts as literals.
+
+```sh
+pnpm install
+pnpm dev        # dev server with presenter mode at /presenter
+pnpm build      # static site in build/web/class03
+pnpm export     # build/class03-web.pdf
+pnpm titles     # the title-only outline
+```
 
 ## What stays out of this repository
 
