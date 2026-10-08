@@ -15,3 +15,4 @@ data/signals.csv
 # Web decks (Slidev)
 node_modules/
 .slidev/
+decks/public/

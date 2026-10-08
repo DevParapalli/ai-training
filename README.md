@@ -68,6 +68,8 @@ pnpm export     # build/class03-web.pdf
 pnpm titles     # the title-only outline
 ```
 
+Any Typst deck can be presented through the same theme without a port. `pnpm import` compiles `decks/class03.typ` to one SVG per page and writes `decks/class03-pages.md`, a deck of `page` slides with the Typst titles and sections; `pnpm dev:pages` presents it with notes and the presenter view. Speaker notes written in that markdown survive re-runs; the pages under `decks/public/` are build output.
+
 ## What stays out of this repository
 
 Content MUST NOT include:

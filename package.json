@@ -7,7 +7,9 @@
     "dev": "slidev decks/class03.md",
     "build": "slidev build decks/class03.md --out build/web/class03",
     "export": "slidev export decks/class03.md --output build/class03-web.pdf",
-    "titles": "node ../proxima/deck/scripts/titles.mjs decks/class03.md"
+    "titles": "node ../proxima/deck/scripts/titles.mjs decks/class03.md",
+    "import": "node ../proxima/deck/scripts/import-pages.mjs decks/class03.typ --out decks -- --root .",
+    "dev:pages": "slidev decks/class03-pages.md"
   },
   "devDependencies": {
     "@slidev/cli": "^53.0.0",
