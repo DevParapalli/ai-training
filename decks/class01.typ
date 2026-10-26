@@ -19,7 +19,7 @@
 
 #outline-slide(current: none)
 
-#section-slide(number: [1], title: [How this track works], subtitle: [Fifteen classes, one company, one idea running through all of them.])
+#section-slide(number: [1], title: [How this track works], subtitle: [Six classes, one company, one idea running through all of them.])
 
 #steps-slide(title: [Every class runs the same way],
   [#minutes.idea min on the idea and the steps, for everyone],
@@ -27,7 +27,7 @@
   [#minutes.questions min of questions],
   [Exercises live in the repo, for after class])
 
-#split(title: [We are #co.name], sub: [#co.what. For the next fifteen classes, this is our company. Yes, the initials are on purpose.],
+#split(title: [We are #co.name], sub: [#co.what. For the next six classes, this is our company. Yes, the initials are on purpose.],
   ([What we do], [Move freight: bookings, customs, warehouses, trucks. Plus everything behind it: finance, HR, IT, facilities.]),
   ([Why it's hard], [Freight across 40+ countries, money in 11 currencies, and a short payment on nearly every cross-border receipt.]),
   ([What's real], [Nothing. The company, the systems, the people and the numbers are made up, so we can use them freely.]),
@@ -112,7 +112,7 @@
     [
       *Works well when* the input varies and nobody has labels.
 
-      *Falls over when* it's confidently wrong, gives a different answer next time, costs money per call, or sends data somewhere it shouldn't go (class 8).
+      *Falls over when* it's confidently wrong, gives a different answer next time, costs money per call, or sends data somewhere it shouldn't go (class 4).
     ],
   )
 ]
@@ -138,7 +138,7 @@
 #explain(title: [Four things generative AI is not],
   ([A database], [It doesn't look facts up. It predicts likely text, which is often right and sometimes invented.]),
   ([Deterministic], [Ask twice, get two answers. Settings reduce this; they don't remove it.]),
-  ([A search engine], [It knows what it was trained on, up to a date. #co.short's runbooks have to be handed to it (class 9).]),
+  ([A search engine], [It knows what it was trained on, up to a date. #co.short's runbooks have to be handed to it (class 5).]),
   ([Magic], [It's a very large pattern predictor. Useful, and wrong in patterned ways we can learn to spot.]),
 )
 
@@ -174,7 +174,7 @@
 #claim(title: [Ask the same thing twice and the two answers differ])[
   #cols(tile[*Run 1* \ #run-a], tile[*Run 2* \ #run-b])
   #v(0.6em)
-  Both are fine here. In class 7 we make the output something a program can check, so "fine" stops being a judgement call.
+  Both are fine here. In class 4 we make the output something a program can check, so "fine" stops being a judgement call.
 ]
 
 #on-the-card(at: (1, 2, 3, 4, 5))

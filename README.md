@@ -1,6 +1,6 @@
 # AI Builder Track
 
-Fifteen one-hour classes on telling which problems need AI, which need a model, which need a script, and which need nothing at all, and then on building the ones that do.
+Six one-hour classes on telling which problems need AI, which need a model, which need a script, and which need nothing at all, and then on building the ones that do.
 
 Copyright © 2026 Devansh Parapalli (hey@parapalli.dev). Released under the MIT licence (see `LICENSE`).
 
@@ -13,6 +13,8 @@ Nobody writes code in class. Each class runs in three parts:
 - **30 minutes: the idea and the steps.** For everyone.
 - **20 minutes: the code.** For developers and support engineers.
 - **10 minutes: questions.**
+
+From class 3, the class covers the starting point and the mistakes people make; each class has a deeper-reading handout with the rest: code to run and reading in order.
 
 Every class is recorded.
 
@@ -29,11 +31,12 @@ Employees' laptops are managed in Intune with Entra ID sign-in. Contractors' lap
 ## Layout
 
 ```
-syllabus.md                   the fifteen classes, what each covers and why
+syllabus.md                   the six classes, what each covers and why
 data/generate.py              builds the generated ticket and host-signal data (seeded, stdlib only)
 data/tickets_handwritten.csv  300 tickets written by hand, the way people actually raise them
-data/runbooks/                eight LOL runbooks for retrieval, tools and agents (classes 9 to 12)
-docs/prereading.typ           pre-week Python self-study and pre-reading for classes 2 to 15
+data/runbooks/                eight LOL runbooks for retrieval, tools and agents (class 5)
+docs/prereading.typ           pre-week Python self-study and pre-reading for classes 2 to 6
+docs/deeper/classNN.typ       deeper-reading handouts for classes 3 to 6: mistakes, code to run, links
 docs/proposal.typ             capstone proposal, worked example
 docs/proposal-blank.typ       capstone proposal, blank one-page worksheet
 decks/course.typ              course-wide facts: company, systems, the running ticket
@@ -60,4 +63,4 @@ typst compile --root . --input projection=light decks/class01.typ build/class01-
 typst compile --root . --input mode=handout decks/class01.typ build/class01-handout.pdf
 ```
 
-`scripts/build.sh` builds every class in all three forms.
+`scripts/build.sh` builds every class in all three forms, the pre-reading, the handouts and the proposals.

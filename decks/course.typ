@@ -8,7 +8,7 @@
 
 #let track = "Building the Right AI System"
 #let footer-line = [© 2026 Devansh Parapalli]
-#let total-classes = 15
+#let total-classes = 6
 
 // Us. The whole track is told from inside LOL, looking at the whole company:
 // every department raises tickets, and every department has problems AI might or
@@ -77,7 +77,7 @@
   role: [Supplier. Our cloud provider. The bill needs cost centres it never has; credits arrive late.],
 )
 
-// The ticket that runs through classes 1 to 5.
+// The ticket that runs through classes 1 to 3.
 #let ticket = (
   id: [TKT-204117],
   short: [InvoiceHub import from Armadillo Security Services stuck],
@@ -121,7 +121,7 @@
   ),
 )
 
-// Real reference policies, one slide in class 8. Replace per audience.
+// Real reference policies, one slide in class 4. Replace per audience.
 #let reference-policies = (
   (
     who: [TCS],
@@ -139,4 +139,16 @@
       [Local models on a laptop: Cisco Confidential. Everything else: Cisco Public.],
     ),
   ),
+)
+
+// Capstone draw (class 6). Teams draw one before class, or bring their own.
+#let capstone-problems = (
+  [Match #bum.short's EUR receipts to invoices automatically, net of bank charges],
+  [Tell dispatch which trucks will miss their slot at Felixstowe tomorrow],
+  [Answer drivers' payslip questions in their own language],
+  [Flag supplier emails asking for bank changes before anyone reads them],
+  [Summarise every customs hold for the weekly ops review],
+  [Predict which warehouse Wi-Fi access point fails next],
+  [Book visitor passes from a meeting invite],
+  [Decide which background check results need a second look],
 )

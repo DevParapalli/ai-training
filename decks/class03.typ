@@ -2,17 +2,20 @@
 
 // ---- Class facts: change here, not in the slides ---------------------------
 // Measured by code/class03/*.py on data/tickets.csv (seed 20260928). Re-run and
-// update if the generator changes.
+// update if the generator changes. Embedding and LLM figures are illustrative
+// until embed_classify.py and llm_classify.py are run with a model and a key.
 #let n = 3
-#let title = [Classical ML, done properly]
-#let subtitle = [The baseline every AI proposal has to beat, and how to measure it without fooling yourself.]
-#let acc = (baseline: 9, rules: 60, tfidf: 90, handwritten: 71, rules-handwritten: 53)          // % on the 600-ticket test set
+#let title = [Classical ML and text]
+#let subtitle = [The baseline every AI proposal has to beat, how text becomes numbers, and the mistakes that make a bad model look good.]
+#let acc = (baseline: 9, rules: 60, tfidf: 90, handwritten: 71, rules-handwritten: 53, embed: 92, llm: 84)  // % correct
 #let biggest-queue = [access-request]
 #let p1 = (total: 3000, p1: 33, never: [98.9%])
 #let weakest = (queue: [password-reset], recall: [0.76], support: 42)
-#let cm = (tp: 23, fn: 2, fp: 3, tn: 572)                // payroll-mismatch against the rest, measured
-#let volume = (normal: [5.4], close: [12.2])              // tickets per weekday
-#let faults = (flagged: 101, injected: 52, caught: 52)
+#let threshold = (at: [0.3], routed: [37%], right: [95%], caught: [4 of 5])   // threshold.py on the handwritten tickets
+#let new-ticket = [“Invoices from Armadillo Security Services not showing in InvoiceHub. Batch IH-260301-07.”]
+#let sims = (dup: [0.61], status: [0.41], po: [0.19], gl: [0.01])
+#let speed = (tfidf: [under 1 ms], embed: [about 20 ms], llm: [about 800 ms])
+#let cost = (tfidf: [effectively free], embed: [a few CPU hours], llm: [pay per token])
 // -----------------------------------------------------------------------------
 
 #show: class.with(n: n)
@@ -22,198 +25,162 @@
 
 #outline-slide(current: none)
 
-#section-slide(number: [1], title: [What a model learns from], subtitle: [Examples in, a pattern out.])
+#section-slide(number: [1], title: [The baseline], subtitle: [Examples in, a pattern out, and a number to beat.])
 
 #claim(title: [A model learns a mapping from examples, so the examples decide what it can learn])[
   #cols(widths: (1.1fr, 1fr),
     [
       Each old ticket is one example. The *features* are what the model gets to look at: the words, the system named, whether it's period end. The *label* is the right answer: the queue that fixed it.
 
-      Training finds weights that turn features into labels. If the old labels were sloppy, the model learns the sloppiness too. About 5% of ours are.
+      If the old labels were sloppy, the model learns the sloppiness too. About 5% of ours are.
     ],
     stack(spacing: 0.35cm,
       tile[*Features* \ "Harbor MDM enrolment stuck for CW-48213" · contingent · portal],
-      tile[*Label* \ cw-device],
+      tile[*Label* \ device-enrolment],
     ),
   )
 ]
-
-#display-slide(title: [The word for today], sub: [If a model can't beat this, it doesn't ship])[Baseline]
 
 #exhibit(title: [Always guessing the biggest queue gets #acc.baseline%; rules get #acc.rules%; a simple model gets #acc.tfidf%], source: [Measured on the generated ticket set, 600 held-out tickets])[
   #columns-chart(height: 7cm,
     ([Always "#biggest-queue"], acc.baseline, [#acc.baseline%]),
-    ([Nine keyword rules], acc.rules, [#acc.rules%]),
+    ([Thirteen keyword rules], acc.rules, [#acc.rules%]),
     ([TF-IDF + logistic regression], acc.tfidf, [#acc.tfidf%]))
-  #notes[The rules are the ones a support lead would write on day one. They're in code/class03/classify.py. 80% from nine lines is a strong result; say so.]
+  #notes[The word for today is baseline: if a model can't beat it, it doesn't ship. The rules are the ones a support lead writes on day one, in code/class03/classify.py.]
 ]
 
-#section-slide(number: [2], title: [Measuring it honestly], subtitle: [Most bad models look great on the data they were trained on.])
-
-#split(title: [Hold back a test set, like an exam you haven't seen], sub: [Split before you look at anything.],
-  ([Train on most of it], [80% of the tickets. The model sees these examples and their answers.]),
-  ([Test on the rest], [20% it never saw. This is the only score that counts.]),
+#split(title: [Hold back a test set, like an exam nobody has seen], sub: [Split before you look at anything.],
+  ([Train on most of it], [80% of the tickets. The model sees these and their answers.]),
+  ([Test on the rest], [20% it never saw. The only score that counts.]),
   ([Split by time if time matters], [Train on last year, test on this quarter. That's how it'll be used.]),
 )
 
-#claim(title: [Leakage is when the answer sneaks into the training data, and the score lies])[
-  #cols(
-    [
-      - The description says "moved to the invoice queue"
-      - Resolution notes, written after the fact, are used as input
-      - The same ticket appears twice, once on each side of the split
-    ],
-    [
-      Each one makes the test score look excellent and the live results poor.
+#explain(title: [Precision and recall ask two different questions, and the cost of a mistake picks one],
+  ([Precision], [Of the tickets it sent to payroll, how many were payroll? Favour it when a wrong action costs more than a miss: auto-replies, auto-extensions.]),
+  ([Recall], [Of the real payroll mismatches, how many did it catch? Favour it when a miss costs more: P1s, odd readings on integration hosts.]),
+  ([Confusion matrix], [The four counts behind both: hits, misses, false alarms, correct passes.]),
+)
 
-      *Rule of thumb:* only use what was known at the moment the prediction would be made.
-    ],
-  )
-]
+#section-slide(number: [2], title: [Text into numbers], subtitle: [Computers don't read. They count.])
 
-#claim(title: [#p1.never accuracy means nothing when almost no tickets are P1])[
+#claim(title: [Regular expressions handle anything with a fixed shape, and they never guess])[
   #cols(widths: (1fr, 1.1fr),
     [
-      Out of #p1.total tickets, #p1.p1 are P1, nearly all payroll mismatches. A model that always says "not P1" is right #p1.never of the time.
+      #co.short's IDs all follow patterns. A regex finds them exactly, every time, for free.
 
-      It has never caught a single P1.
+      Use regex first. Reach for a model only when the shape isn't fixed.
     ],
-    stats(([#p1.total], [tickets]), ([#p1.p1], [actually P1]), ([#p1.never], [accuracy of "never P1"]), ([0], [P1s caught])),
+    stack(spacing: 0.25cm,
+      tile[*Ticket* · `TKT-204117`],
+      tile[*#app.inv batch* · `IH-260301-07`],
+      tile[*Contractor* · `CW-48213`],
+    ),
   )
 ]
 
-#explain(title: [Precision and recall ask two different questions],
-  ([Precision], [Of the tickets it sent to payroll, how many really were payroll? Low precision wastes analysts' time.]),
-  ([Recall], [Of the real payroll mismatches, how many did it send there? Low recall means an RCA starts late.]),
-  ([F1], [One number that balances the two. Useful for comparing; hides which one is weak.]),
-  ([Confusion matrix], [The four counts behind all of it: hits, misses, false alarms, correct passes.]),
-)
-
-#table-slide(title: [The confusion matrix is four counts, and every metric comes from them], columns: 3,
-  header: ([], [Predicted payroll], [Predicted other]),
-  [Actually payroll], [#cm.tp · caught], [#cm.fn · missed],
-  [Actually other], [#cm.fp · false alarm], [#cm.tn · correct pass],
-  source: [Test set, payroll-mismatch against everything else])
-
-#compare(title: [Which one to favour depends on what a mistake costs],
-  left: ([Favour recall], [
-    - Payroll mismatches and P1s
-    - Odd readings on the integration hosts
-    - A miss costs more than a false alarm
-  ]),
-  right: ([Favour precision], [
-    - Auto-replying to #app.inv status checks
-    - Auto-extending #app.cw accounts
-    - A wrong action costs more than a miss
-  ]),
-)
-
-#section-slide(number: [3], title: [Two more jobs classical ML does well], subtitle: [Finding the odd one out, and saying what comes next.])
-
-#claim(title: [Anomaly detection found every injected fault in the host signal feed, with no labels])[
+#claim(title: [TF-IDF weighs rare words up, and cosine similarity compares two tickets by angle])[
   #cols(widths: (1.1fr, 1fr),
     [
-      Our monitoring sends hourly CPU, memory and job latency for 60 integration hosts. An isolation forest keeps splitting the data at random; readings that get separated in very few splits are the odd ones.
+      New ticket: #new-ticket
 
-      Nobody had to write a threshold for each host.
+      Every ticket becomes a list of word weights; "enrolment" counts, "the" doesn't. The PO ticket scores #sims.po only because it names the same supplier: no order, no synonyms.
     ],
-    stats(([#faults.flagged], [readings flagged]), ([#faults.caught / #faults.injected], [injected faults caught])),
+    stats(([#sims.dup], [a past "not showing" ticket]), ([#sims.status], [a status check, other wording]), ([#sims.po], [a PO reopen, same supplier])),
   )
-  #notes[About half the flags are real faults, half are busy hours that look unusual. That's the precision trade-off again. Show code/class03/signals.py.]
 ]
 
-#claim(title: [Ticket volume doubles around period close, so a forecast has to know the calendar])[
+#claim(title: [Embeddings turn a whole ticket into one vector that keeps its meaning])[
   #cols(widths: (1.1fr, 1fr),
     [
-      #app.gl, payroll and #sc.short billing tickets pile up in the last two days of the month and the first three of the next. A seasonal model learns the weekly shape and the close spike.
+      A transformer reads the ticket in context, every word looking at every other word, and returns one vector. "Import stuck" and "invoices not showing" land close together with no words in common.
 
-      The baseline to beat is simple: this close looks like last close.
+      This is what class 5 builds retrieval on.
     ],
-    stats(([#volume.normal], [tickets a normal weekday]), ([#volume.close], [tickets a close weekday])),
+    stats(([1,024], [numbers per ticket]), ([#speed.embed], [per ticket on a laptop])),
   )
+  #notes[Recurrent networks, attention and encoder versus decoder are in the class 3 deeper-reading handout. For today, one sentence: attention is why it understands context, and why there's a context window (class 4).]
 ]
 
-#compare(title: [Classical ML beats an LLM when the input is structured and the volume is high], pick: "left",
-  left: ([Classical ML], [
-    - Fractions of a cent per million predictions
-    - Milliseconds, runs on a laptop CPU
-    - Same input, same answer, every time
-    - Weights you can inspect
-  ]),
-  right: ([LLM], [
-    - Cost per call, every call
-    - Hundreds of milliseconds to seconds
-    - Answers vary between runs
-    - Hard to explain a single decision
-  ]),
+#table-slide(title: [On a fixed task with labels, the small models match the LLM for far less], columns: 4,
+  header: ([Method], [Accuracy], [Per ticket], [Per 100k tickets]),
+  [TF-IDF + LR], [#acc.tfidf%], speed.tfidf, cost.tfidf,
+  [Embeddings + LR], [#acc.embed%], speed.embed, cost.embed,
+  [LLM, zero-shot], [#acc.llm%], speed.llm, cost.llm,
+  source: [TF-IDF measured; other rows illustrative])
+
+#section-slide(number: [3], title: [Mistakes people make], subtitle: [Each one makes a bad model look good.])
+
+#explain(title: [Measuring mistakes: the score lies and nobody notices],
+  ([Scoring on training data], [Like marking an exam the students already saw. Fix: split first, look later.]),
+  ([Leakage], [The answer sneaks in: "moved to payroll queue" in the text, resolution notes as input. Fix: only use what was known when the prediction is made.]),
+  ([Accuracy on uneven classes], [#p1.p1 of #p1.total tickets are P1. "Never P1" scores #p1.never and catches none. Fix: recall on the class that matters.]),
+  ([Reading the average], [#weakest.queue has recall #weakest.recall while the average looks fine. Fix: read the report from the worst queue up.]),
 )
 
-#steps-slide(title: [Building a classical model always follows the same six steps],
-  [Collect labelled history],
-  [Split before looking],
-  [Score the baseline],
-  [Train a simple model],
-  [Measure on the test set],
-  [Decide: ship, improve, or stop])
+#explain(title: [Building mistakes: it works in the notebook and fails on the desk],
+  ([No baseline], [90% sounds good until "#biggest-queue" every time is on the slide too. Fix: score the dumbest option first.]),
+  ([Trusting a clean test set], [Generated tickets score #acc.tfidf%; tickets people really wrote, #acc.handwritten%. Fix: test on real, messy input.]),
+  ([Never saying "I don't know"], [It puts the phishing report and the fridge in a queue anyway. Fix: a confidence threshold and a person.]),
+  ([Picking a cutoff by eye], [Duplicate and alarm cutoffs are precision versus recall. Fix: choose it on a labelled sample.]),
+)
 
-#section-slide(number: [4], title: [Code walkthrough], subtitle: [A ticket classifier in scikit-learn, scored against the baseline and the rules.])
+#claim(title: [A confidence threshold turns "always answers" into "answers when it knows"])[
+  #cols(widths: (1.1fr, 1fr),
+    [
+      On the #dataset.handwritten.rows handwritten tickets, routing only when the model's confidence is above #threshold.at sends #threshold.routed automatically, #threshold.right of them correctly. The rest go to a person, including #threshold.caught tickets that belong in no queue.
 
-#code-slide(title: [Split first, and keep the queue mix the same on both sides], file: "code/class03/classify.py", highlight: (2,))[
+      Less automation, far fewer wrong answers. That's usually the trade you want.
+    ],
+    stats(([#acc.handwritten%], [right, routing everything]), ([#threshold.right], [right, above #threshold.at]), ([#threshold.routed], [routed automatically])),
+  )
+  #notes[One of the five "other" tickets is a fake bank-change email. Routed to invoices, it makes fraud easier. That's why "I don't know" matters.]
+]
+
+#section-slide(number: [4], title: [Code walkthrough], subtitle: [A baseline, a model, and a threshold.])
+
+#code-slide(title: [Split first, then the baseline and the real model are one line each], file: "code/class03/classify.py", highlight: (1, 2, 4))[
   ```python
-  df = tickets()
   train, test = train_test_split(df, test_size=0.2, stratify=df.queue, random_state=7)
-  ```
-]
-
-#code-slide(title: [The rules a support lead would write on day one are nine regular expressions], file: "code/class03/classify.py", highlight: (2, 3))[
-  ```python
-  RULES = [
-      (r"password|locked out|account locked", "password-reset"),
-      (r"invoicehub|invoice import|batch ih-", "invoice-import-status"),
-      (r"reopen|closed too early|po-4500", "po-reopen"),
-      (r"harbor|enrol|lol image", "cw-device"),
-      (r"payroll|paygrid", "payroll-mismatch"),
-      # ... four more
-  ]
-  ```
-]
-
-#code-slide(title: [The baseline and the real model are each one line], file: "code/class03/classify.py", highlight: (1, 2, 3))[
-  ```python
   baseline = DummyClassifier(strategy="most_frequent").fit(train.text, train.queue)
   model = make_pipeline(TfidfVectorizer(ngram_range=(1, 2), min_df=2),
                         LogisticRegression(max_iter=1000)).fit(train.text, train.queue)
-  print(classification_report(test.queue, model.predict(test.text)))
+  print(classification_report(test.queue, model.predict(test.text), digits=2))
   ```
 ]
 
-#claim(title: [Read the report from the worst queue up, not from the average down])[
-  - The weakest queue is *#weakest.queue*, with recall #weakest.recall on #weakest.support test tickets
-  - Those are the vague ones: "Account locked" with no system named, so it looks like an access request
-  - Compare the overall score to the baseline before saying anything is good
-  #notes[Show the report live. Point at payroll first, then the average.]
+#code-slide(title: [The threshold is the model's own confidence, compared with a number you chose], file: "code/class03/threshold.py", highlight: (2, 3, 6))[
+  ```python
+  proba = model.predict_proba(real.text)
+  real["pred"] = model.classes_[proba.argmax(axis=1)]
+  real["confidence"] = proba.max(axis=1)
+
+  for t in (0.0, 0.2, 0.25, 0.3, 0.4, 0.5):
+      auto = real[real.confidence >= t]
+  ```
 ]
 
-#claim(title: [On tickets written the way people actually write, it drops to #acc.handwritten%, and it never says "I don't know"])[
-  #cols(widths: (1fr, 1.1fr),
-    [
-      We wrote #dataset.handwritten.rows tickets by hand, across the whole company: one-word titles, typos, two problems in one, forwarded chains. The model trained on the generated set gets #acc.handwritten% of them. The day-one rules get #acc.rules-handwritten%.
-
-      The five that belong in no queue, a test ticket, a phishing report, a suspicious bank-change email, it puts in one anyway.
-    ],
-    stack(spacing: 0.3cm,
-      tile[*"Vendor bank change request"* (a fraud attempt) \ went to invoice-import],
-      tile[*"Break room fridge"* \ went to ledger-close],
-      tile[*"Payroll - Leeds double payment"* \ went to customer-payments],
-    ),
-  )
-  #notes[Run code/class03/handwritten.py live. The fix for "not ours" tickets is a confidence threshold plus a person, not a better model. The bank-change one matters: it should have gone to security, and a model that routes it to invoices makes fraud easier.]
+#code-slide(title: [Seven patterns pull out most of what a ticket needs, before any model], file: "code/class03/extract.py", highlight: (2, 3, 4))[
+  ```python
+  PATTERNS = {
+      "ticket":   re.compile(r"\bTKT-\d{6}\b"),
+      "shipment": re.compile(r"\bLOL-SH-\d{7}\b"),
+      "batch":    re.compile(r"\bIH-\d{6}-\d{2}\b"),
+      # ... po, worker, error, account
+  }
+  ```
 ]
 
-#on-the-card(at: (3,))
+#explain(title: [In the handout: what we skipped today, each with code to run],
+  ([Forecasting], [Ticket volume around period close. `forecast.py`]),
+  ([Anomaly detection], [Odd readings on the integration hosts, with no labels. `signals.py`]),
+  ([Duplicates and embeddings], [TF-IDF duplicates, local embeddings, the LLM on the same tickets. `duplicates.py`, `embed_classify.py`, `llm_classify.py`]),
+  ([How transformers work], [From word counts to attention. Reading only.]),
+)
+
+#on-the-card(at: (2, 3, 4))
 
 #close(actions: (
-  [Run `code/class03/classify.py` and find the weakest queue on your machine.],
-  [Change the split to time-based and see what happens to the score.],
-  [Read the class 4 pre-reading on regular expressions.],
+  [Run `classify.py` and `threshold.py`, and pick the threshold you'd ship.],
+  [Work through the class 3 handout: `docs/deeper/class03`.],
+  [Read the class 4 pre-reading on tokens and schemas.],
 ), contact: [Questions after class: the course channel.])

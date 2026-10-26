@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "lol-ops": {
-      "command": "uv",
-      "args": ["run", "code/class11/server.py"]
-    }
-  }
-}
